@@ -1,0 +1,33 @@
+<style>
+    /* Style header */
+    .my-header{
+        width: 100vw;
+        height: 5vh;
+        position: fixed;
+        left: 0;
+        z-index: 999;
+        background-color: aqua;
+    }
+
+    /* styles footer */
+    .my-footer {
+        width: 100vw;
+        height: 7vh;
+        position: fixed;
+        top: 93vh;
+        left: 0;
+        z-index: 999;
+        background-color: aqua;
+    }
+</style>
+
+<div class="my-header">
+    MENU SUPERIOR
+</div>
+
+{% block 'content' %}
+{% endblock  %}
+
+<div class="my-footer">
+    FOOTER
+</div>
