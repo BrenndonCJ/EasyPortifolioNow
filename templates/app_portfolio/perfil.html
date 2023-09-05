@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="pt">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Perfil">
+    <meta name="description" content="">
+    <title>PERFIL</title>
+    <link rel="stylesheet" href="{% static 'app_portfolio/usuario/css/nicepage.css'%}" media="screen">
+    <link rel="stylesheet" href="{% static 'app_portfolio/usuario/css/perfil.css' %}" media="screen">
+    <meta name="generator" content="Nicepage 5.15.1, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    <style>.u-dialog-section-8 .u-dialog-1 {
+        width: 566px;
+        min-height: 198px;
+        height: auto;
+        box-shadow: 2px 2px 8px 0px rgba(128,128,128,1);
+        margin: 234px auto 60px;
+      }
+    
+      .u-dialog-section-8 .u-container-layout-1 {
+        padding: 27px 29px 0;
+      }
+    
+      .u-dialog-section-8 .u-form-1 {
+        margin: 1px 1px 0;
+      }
+    
+      .u-dialog-section-8 .u-btn-1 {
+        border-style: solid;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+      }
+    
+      .u-dialog-section-8 .u-btn-2 {
+        border-style: solid;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        margin: -73px auto 0;
+      }
+    
+      .u-dialog-section-8 .u-icon-1 {
+        width: 15px;
+        height: 15px;
+        left: auto;
+        top: 17px;
+        position: absolute;
+        right: 16px;
+      }
+    
+      @media (max-width: 1199px) {
+        .u-dialog-section-8 .u-form-1 {
+          margin-top: 0;
+          margin-right: initial;
+          margin-left: initial;
+        }
+    
+        .u-dialog-section-8 .u-btn-1 {
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+    
+        .u-dialog-section-8 .u-btn-2 {
+          margin-top: -73px;
+        }
+      }
+    
+      @media (max-width: 767px) {
+        .u-dialog-section-8 .u-dialog-1 {
+          width: 540px;
+        }
+    
+        .u-dialog-section-8 .u-container-layout-1 {
+          padding-top: 45px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+    
+      @media (max-width: 575px) {
+        .u-dialog-section-8 .u-dialog-1 {
+          width: 340px;
+        }
+    
+        .u-dialog-section-8 .u-container-layout-1 {
+          padding-top: 40px;
+          padding-left: 25px;
+          padding-right: 25px;
+        }
+      }
+  </style>
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Página Inicial">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="/">
+    <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+  </head>
+
+  <body class="u-body u-stick-footer u-xl-mode" data-lang="pt">
+    <header class="u-clearfix u-header" id="sec-66ed" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a href="" class="u-image u-logo u-image-1">
+          <img src="{% static 'app_portfolio/usuario/images/default-logo.png'%}" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px 20px;">Perfil</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'portfolioselect' %}" style="padding: 10px 20px;">Portfolio</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'sair' %}" style="padding: 10px 20px;">Sair</a></li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#">Perfil</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'portfolioselect' %}">Portfolio</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'sair' %}">Sair</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+      <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="sec-4992">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h1 class="u-text u-text-default u-text-1">Perfil<br></h1>
+          {% if portfolio_url %}
+            <h3 class="u-text u-text-default u-text-1">URL Portfolio<br></h3>
+            <label class="u-label">{{portfolio_url}}</label>
+          {% endif %}
+        </div>
+      </section>
+      <section class="u-align-center u-clearfix u-white u-section-2" id="sec-bc96">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-form u-form-1">
+            <form method="post" action="{% url 'userperfil' %}" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" name="form">
+              {% csrf_token %}
+              <div class="u-form-group u-form-name u-label-none">
+                <label class="u-label">Instagram</label>
+                <input {% if sociais.instagram %} value="{{sociais.instagram}}" {% endif %} type="text" placeholder="INSTAGRAM" id="name-3b9a" name="instagram" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-1">
+              </div>
+              <div class="u-form-email u-form-group u-label-none">
+                <label class="u-label">Twitter</label>
+                <input {% if sociais.twitter %} value="{{sociais.twitter}}" {% endif %} type="text" placeholder="TWITTER" id="email-3b9a" name="twitter" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-2">
+              </div>
+              <div class="u-form-group u-label-none u-form-group-4">
+                <label class="u-label">Github</label>
+                <input {% if sociais.github %} value="{{sociais.github}}" {% endif %} type="text" id="text-eec6" name="github" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3" placeholder="GITHUB">
+              </div>
+              <div class="u-form-group u-label-none u-form-group-4">
+                <label class="u-label">TikTok</label>
+                <input {% if sociais.tiktok %} value="{{sociais.tiktok}}" {% endif %} type="text" id="text-eec6" name="tiktok" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3" placeholder="TIKTOK">
+              </div>
+              <div class="u-form-group u-label-none u-form-group-5">
+                <label class="u-label">LinkedIn</label>
+                <input {% if sociais.linkedin %} value="{{sociais.linkedin}}" {% endif %} type="text" placeholder="LINKEDIN" id="text-d8f9" name="linkedin" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-4">
+              </div>
+              <div class="u-form-group u-label-none u-form-group-6">
+                <label class="u-label">Frase</label>
+                <input {% if sociais.frase %} value="{{sociais.frase}}" {% endif %} type="text" placeholder="FRASE PARA TEMPLATES" id="text-d65e" name="frase" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-5">
+              </div>
+              <div class="u-form-group u-form-message u-label-none">
+                <label class="u-label">Descrição</label>
+                <textarea placeholder="DESCRIÇÃO" rows="4" cols="50" id="message-3b9a" name="descricao" class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-6">{% if sociais.descricao %}{{sociais.descricao}}{% endif %}</textarea>
+              </div>
+              <input type="submit" value="SALVAR" class="u-border-2 u-border-black u-btn u-button-style u-hover-palette-4-light-1 u-none u-text-hover-white u-btn-2">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="u-align-center u-clearfix u-grey-5 u-section-3" id="carousel_98f5">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h1 class="u-text u-text-default u-text-1">Projetos</h1>
+          <a href="#sec-5b8e" class="u-border-active-palette-2-base u-border-no-left u-border-no-right u-border-no-top u-btn u-btn-round u-button-style u-dialog-link u-hover-feature u-none u-radius-10 u-text-hover-palette-4-dark-1 u-btn-1"><span class="u-file-icon u-icon u-icon-1"><img src="{% static 'app_portfolio/usuario/images/1237946.png'%}" alt=""></span></a>
+        </div>        
+      </section>
+
+      <section class="u-align-center u-clearfix u-section-4" id="sec-5921">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-expanded-width u-table u-table-responsive u-table-1">
+            <table class="u-table-entity u-table-entity-1">
+              <colgroup>
+                <col width="21%">
+                <col width="73.4%">
+                <col width="5.6%">
+              </colgroup>
+              <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+                <tr style="height: 65px;">
+                  <td class="u-table-cell">Projeto</td>
+                  <td class="u-table-cell">Link</td>
+                  <td class="u-table-cell"></td>
+                </tr>
+                
+                {%for projeto in projetos%}
+                <tr style="height: 65px;">
+                  <td class="u-table-cell">{{projeto.nome}}</td>
+                  <td class="u-table-cell">{{projeto.link}}</td>
+                  <td class="u-table-cell">
+                    <a href="{% url 'projectdelete' projeto.id %}" class="u-border-none u-btn u-button-style u-none u-btn-1"><span class="u-file-icon u-icon u-icon-rectangle u-icon-1"><img src="{% static 'app_portfolio/usuario/images/10110791.png'%}" alt="DELETE"></span></a>
+                  </td>
+                </tr>
+                {% endfor %}
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2e24">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <p class="u-small-text u-text u-text-variant u-text-1">Texto de Amostra. Clique para selecionar o Elemento de Texto.</p>
+        </div>
+      </footer>
+      
+      {% comment %} <section class="u-backlink u-clearfix u-grey-80">
+        <a class="u-link" href="" target="_blank">
+          <span>Website Templates</span>
+        </a>
+        <p class="u-text">
+          <span>created with</span>
+        </p>
+        <a class="u-link" href="" target="_blank">
+          <span>Website Builder Software</span>
+        </a>. 
+      </section> {% endcomment %}
+      <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-dialog-section-8" id="sec-5b8e">
+        <div class="u-align-center u-container-style u-dialog u-radius-13 u-shape-round u-white u-dialog-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="u-expanded-width u-form u-form-1">
+              <form action="{% url 'addproject' %}" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px">
+                {% csrf_token %}
+                <div class="u-form-group u-form-name">
+                  <label class="u-label">Titulo do projeto</label>
+                  <input type="text" placeholder="Insira o titulo do projeto" id="name-5089" name="nome" class="u-input u-input-rectangle">
+                </div>
+                <div class="u-form-group u-form-name">
+                  <label class="u-label">Link</label>
+                  <input type="text" placeholder="Insira o link para o projeto" id="name-5089" name="link" class="u-input u-input-rectangle">
+                </div>
+                <div class="u-align-center u-form-group">
+                  <br>
+                  <br>
+                  <br>
+                  {% comment %} <a href="{% url 'addproject' %}" class="u-border-2 u-border-black u-btn u-button-style u-hover-palette-4-light-1 u-none u-text-hover-white u-btn-2">INSERIR</a> {% endcomment %}
+                  <input type="submit" value="INSERIR" class="u-border-2 u-border-black u-btn u-button-style u-hover-palette-4-light-1 u-none u-text-hover-white u-btn-2">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "url": "/",
+    "logo": "/images/default-logo.png"
+    }
+  </script>
+
+  <script class="u-script" type="text/javascript" src="{% static 'app_portfolio/usuario/js/jquery-1.9.1.min.js'%}" defer=""></script>
+  <script class="u-script" type="text/javascript" src="{% static 'app_portfolio/usuario/js/nicepage.js'%}" defer=""></script>
+
+  </body>
+</html>

@@ -8,6 +8,6 @@ class LogoutRequiredMixin(AccessMixin):
         self.procfile_url = procfile_url
 
     def dispatch(self, request, *args, **kwargs):
-        if not request.user.is_authenticated:
+        if request.user.is_authenticated:
             return redirect(self.procfile_url)
         return super().dispatch(request, *args, **kwargs)

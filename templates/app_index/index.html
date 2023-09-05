@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Document title -->
-    <title>EasyPortifolioNow</title>
+    <title>EasyPortfolioNow</title>
     <!-- Stylesheets & Fonts -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
@@ -53,7 +53,7 @@
                 </nav>
             </div>
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="#">EasyPortifólioNow</a>
+                <a class="navbar-brand" href="#">EasyPortfólioNow</a>
                 <div class="group d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -66,15 +66,15 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        {% comment %} <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li> {% endcomment %}
                         {% comment %} <li class="nav-item"><a class="nav-link" href="#">Services</a></li> {% endcomment %}
-                        <li class="nav-item"><a class="nav-link" href="#">Portfolios</a></li>
+                        {% comment %} <li class="nav-item"><a class="nav-link" href="#">Portfolios</a></li> {% endcomment %}
                         {% comment %} <li class="nav-item"><a class="nav-link" href="#">Shop</a></li> {% endcomment %}
-                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                        {% comment %} <li class="nav-item"><a class="nav-link" href="#">Contato</a></li> {% endcomment %}
                     </ul>
                     <form class="bg-white search-form" method="get" id="searchform">
                         <div class="input-group">
-                            <input class="field form-control" id="s" name="search_portifolio" type="text" placeholder="Search">
+                            <input class="field form-control" id="s" name="search_portifolio" type="text" placeholder="search username">
                             <span class="input-group-btn">
                                 <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
                                     value="Search">
@@ -95,36 +95,22 @@
                 <div class="col-12 offset-md-1 col-md-11">
                     <div class="swiper-container hero-slider">
                         <div class="swiper-wrapper">
+                            <!-- Carrossel de portfolios -->
                             <div class="swiper-slide slide-content d-flex align-items-center">
                                 <div class="single-slide">
-                                    <h1 data-aos="fade-right" data-aos-delay="200">Criativo<br> Portifólios dinâmicos
+                                    <h1 data-aos="fade-right" data-aos-delay="200">Clean Code<br> Portifólios dinâmicos
                                     </h1>
                                     <p data-aos="fade-right" data-aos-delay="600">Crafted by innovative creators for
                                         Expecting
                                         Peoples’s predefined dummy text<br> chunks as necessary, making this the first.
                                     </p>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">See
-                                        More</a>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">Get
-                                        Now</a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-content d-flex align-items-center">
-                                <div class="single-slide">
-                                    <h1 data-aos="fade-right" data-aos-delay="200">Creative<br> Multipurpose websites
-                                    </h1>
-                                    <p data-aos="fade-right" data-aos-delay="600">Crafted by innovative creators for
-                                        Expecting
-                                        Peoples’s predefined dummy text<br> chunks as necessary, making this the first.
-                                    </p>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">See
-                                        More</a>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">Get
-                                        Now</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="https://bit.ly/brenndon-cj" target="_blank" class="btn btn-primary">Veja
+                                        Mais</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="{% url 'logar' %}" class="btn btn-primary">Começe
+                                        Agora</a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
